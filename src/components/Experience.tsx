@@ -70,21 +70,21 @@ const Experience = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`flex flex-col ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}>
-                {/* Icon positioned outside and above the card */}
-                <div className="relative mb-4 md:mb-6">
-                  <div className={`w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-glow ${
-                    index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
-                  }`}>
+                {/* Timeline dot - hidden on mobile, shown on desktop */}
+                <div className="hidden md:block absolute left-1/2 top-7 w-3 h-3 rounded-full bg-accent transform -translate-x-1/2 z-10" />
+                
+                {/* Icon positioned to align with timeline */}
+                <div className={`absolute left-4 md:left-1/2 top-0 md:transform md:-translate-x-1/2 ${
+                  index % 2 === 0 ? 'md:translate-x-[-50%] md:mr-[calc(50%+2rem)]' : 'md:translate-x-[-50%] md:ml-[calc(50%+2rem)]'
+                }`}>
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-glow">
                     <exp.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                 </div>
                 
-                {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full bg-accent md:transform md:-translate-x-1/2 z-10" />
-                
                 {/* Content card */}
-                <div className={`ml-10 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth ${
-                  index % 2 === 0 ? 'md:mr-12 md:w-[calc(100%-3rem)]' : 'md:ml-12 md:w-[calc(100%-3rem)]'
+                <div className={`ml-20 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth mt-16 md:mt-0 ${
+                  index % 2 === 0 ? 'md:mr-[calc(50%+4rem)] md:w-[calc(50%-4rem)]' : 'md:ml-[calc(50%+4rem)] md:w-[calc(50%-4rem)]'
                 }`}>
                   <div className="flex items-center gap-2 mb-2">
                     <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
