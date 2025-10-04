@@ -64,20 +64,27 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`relative mb-12 animate-fade-in ${
+              className={`relative mb-16 animate-fade-in ${
                 index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:text-right'
               }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className={`flex items-start gap-4 ${index % 2 === 0 ? 'md:flex-row-reverse md:justify-end' : 'md:flex-row md:justify-start'}`}>
-                {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow z-10">
-                  <exp.icon className="w-5 h-5 text-primary-foreground" />
+              <div className={`flex flex-col ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}>
+                {/* Icon positioned outside and above the card */}
+                <div className="relative mb-4 md:mb-6">
+                  <div className={`w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-glow ${
+                    index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
+                  }`}>
+                    <exp.icon className="w-7 h-7 text-primary-foreground" />
+                  </div>
                 </div>
                 
+                {/* Timeline dot */}
+                <div className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full bg-accent md:transform md:-translate-x-1/2 z-10" />
+                
                 {/* Content card */}
-                <div className={`ml-16 md:ml-0 glass rounded-xl p-6 flex-1 hover:shadow-glow transition-smooth ${
-                  index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
+                <div className={`ml-10 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth ${
+                  index % 2 === 0 ? 'md:mr-12 md:w-[calc(100%-3rem)]' : 'md:ml-12 md:w-[calc(100%-3rem)]'
                 }`}>
                   <div className="flex items-center gap-2 mb-2">
                     <span className={`px-3 py-1 text-xs font-semibold rounded-full ${

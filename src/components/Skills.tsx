@@ -33,9 +33,9 @@ const Skills = () => {
                 <span className="text-lg font-semibold">{skill.name}</span>
                 <span className="text-accent font-bold">{skill.level}%</span>
               </div>
-              <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
+              <div className="w-full bg-primary/10 border border-primary/20 rounded-full h-3 overflow-hidden">
                 <div
-                  className="gradient-primary h-full rounded-full transition-all duration-1000 ease-out"
+                  className="gradient-primary h-full rounded-full transition-all duration-1000 ease-out shadow-glow"
                   style={{ width: `${skill.level}%` }}
                 />
               </div>
