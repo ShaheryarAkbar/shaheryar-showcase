@@ -71,8 +71,8 @@ const Experience = () => {
             >
               <div className={`flex items-start gap-4 ${index % 2 === 0 ? 'md:flex-row-reverse md:justify-end' : 'md:flex-row md:justify-start'}`}>
                 {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-primary flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow z-10">
-                  <exp.icon className="w-4 h-4 text-primary-foreground" />
+                <div className="absolute left-4 md:left-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow z-10">
+                  <exp.icon className="w-5 h-5 text-primary-foreground" />
                 </div>
                 
                 {/* Content card */}

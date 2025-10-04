@@ -35,7 +35,7 @@ const Skills = () => {
               </div>
               <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
                 <div
-                  className="gradient-accent h-full rounded-full transition-all duration-1000 ease-out"
+                  className="gradient-primary h-full rounded-full transition-all duration-1000 ease-out"
                   style={{ width: `${skill.level}%` }}
                 />
               </div>

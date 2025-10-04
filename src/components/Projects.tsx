@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Aawit Platform",
       description: "Comprehensive web platform with Dashboard, Profile, Live Hub, Events, Messaging, and Member Survey features. Built with HTML5 and CSS3.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
-      features: ["20+ Pages", "Custom Dashboard", "Event Management", "Real-time Messaging"]
+      features: ["20+ Pages", "Custom Dashboard", "Event Management", "Member Survey"]
     },
     {
       title: "Sailor",
