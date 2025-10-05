@@ -50,7 +50,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section id="experience" className="py-20 px-5 md:px-6 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Experience & <span className="text-gradient">Education</span>
@@ -59,7 +59,7 @@ const Experience = () => {
         
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 md:transform md:-translate-x-1/2" />
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 md:transform md:-translate-x-1/2" />
           
           {experiences.map((exp, index) => (
             <div
@@ -74,16 +74,14 @@ const Experience = () => {
                 <div className="hidden md:block absolute left-1/2 top-7 w-3 h-3 rounded-full bg-accent transform -translate-x-1/2 z-10" />
                 
                 {/* Icon positioned to align with timeline */}
-                <div className={`absolute left-4 md:left-1/2 top-0 md:transform md:-translate-x-1/2 ${
-                  index % 2 === 0 ? 'md:translate-x-[-50%] md:mr-[calc(50%+2rem)]' : 'md:translate-x-[-50%] md:ml-[calc(50%+2rem)]'
-                }`}>
+                <div className={`absolute left-1/2 top-0 transform -translate-x-1/2 md:left-1/2 md:transform md:-translate-x-1/2`}>
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-glow">
                     <exp.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                 </div>
                 
                 {/* Content card */}
-                <div className={`ml-20 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth mt-16 md:mt-0 ${
+                <div className={`ml-0 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth mt-16 md:mt-10 ${
                   index % 2 === 0 ? 'md:mr-[calc(50%+4rem)] md:w-[calc(50%-4rem)]' : 'md:ml-[calc(50%+4rem)] md:w-[calc(50%-4rem)]'
                 }`}>
                   <div className="flex items-center gap-2 mb-2">
