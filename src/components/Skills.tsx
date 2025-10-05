@@ -15,8 +15,8 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-5 md:px-6 bg-gradient-to-b from-background to-muted/20">
-      <div className="mx-auto max-w-6xl">
+    <section id="skills" className="py-20 px-0 md:px-6 bg-gradient-to-b from-background to-muted/20">
+      <div className="mx-auto max-w-6xl px-5 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Technical <span className="text-gradient">Skills</span>
         </h2>

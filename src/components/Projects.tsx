@@ -48,8 +48,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-5 md:px-6">
-      <div className="mx-auto max-w-7xl">
+    <section id="projects" className="py-20 px-0 md:px-6">
+      <div className="mx-auto max-w-7xl px-5 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Featured <span className="text-gradient">Projects</span>
         </h2>

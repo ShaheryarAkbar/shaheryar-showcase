@@ -35,7 +35,7 @@ const Navigation = () => {
         isScrolled ? "glass shadow-card py-4" : "bg-transparent py-6"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-5 md:px-6 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 md:px-0 flex items-center justify-between">
         <a
           href="#home"
           onClick={(e) => {

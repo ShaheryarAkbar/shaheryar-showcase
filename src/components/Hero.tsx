@@ -3,12 +3,12 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-5 md:px-6 pt-24">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-0 md:px-6 pt-24">
       {/* Animated background gradient orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
       
-      <div className="mx-auto max-w-6xl text-center z-10 animate-fade-in-up">
+      <div className="mx-auto max-w-6xl px-5 md:px-0 text-center z-10 animate-fade-in-up">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
           <span className="text-gradient">Shaheryar Akbar</span>
         </h1>

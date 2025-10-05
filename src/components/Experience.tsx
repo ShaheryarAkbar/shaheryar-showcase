@@ -50,8 +50,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-5 md:px-6 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto max-w-4xl">
+    <section id="experience" className="py-20 px-0 md:px-6 bg-gradient-to-b from-background to-muted/20">
+      <div className="container mx-auto max-w-4xl px-5 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Experience & <span className="text-gradient">Education</span>
         </h2>
