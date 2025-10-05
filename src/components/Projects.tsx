@@ -48,8 +48,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
-      <div className="container mx-auto max-w-7xl">
+    <section id="projects" className="py-20 px-5 md:px-6">
+      <div className="mx-auto max-w-7xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Featured <span className="text-gradient">Projects</span>
         </h2>
@@ -59,7 +59,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass rounded-xl p-6 hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in group"
+              className="glass rounded-xl p-5 sm:p-6 hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">

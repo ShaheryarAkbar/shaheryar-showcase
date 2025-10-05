@@ -15,8 +15,8 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto max-w-6xl">
+    <section id="skills" className="py-20 px-5 md:px-6 bg-gradient-to-b from-background to-muted/20">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           Technical <span className="text-gradient">Skills</span>
         </h2>
@@ -26,7 +26,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="glass rounded-xl p-6 hover:shadow-card transition-smooth animate-fade-in"
+              className="glass rounded-xl p-5 sm:p-6 hover:shadow-card transition-smooth animate-fade-in"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <div className="flex justify-between items-center mb-3">

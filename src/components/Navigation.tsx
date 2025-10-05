@@ -35,7 +35,7 @@ const Navigation = () => {
         isScrolled ? "glass shadow-card py-4" : "bg-transparent py-6"
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 md:px-6 flex items-center justify-between">
         <a
           href="#home"
           onClick={(e) => {
@@ -78,7 +78,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass mt-4 mx-4 rounded-xl p-6 animate-fade-in">
+        <div className="md:hidden glass mt-4 mx-5 rounded-xl p-5 sm:p-6 animate-fade-in">
           <ul className="space-y-4">
             {navLinks.map((link) => (
               <li key={link.name}>

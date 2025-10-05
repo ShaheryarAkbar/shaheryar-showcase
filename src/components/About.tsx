@@ -20,14 +20,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
+    <section id="about" className="py-20 px-5 md:px-6">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           About <span className="text-gradient">Me</span>
         </h2>
         <div className="w-20 h-1 gradient-primary mx-auto mb-12 rounded-full" />
         
-        <div className="glass rounded-2xl p-8 md:p-12 mb-12 animate-scale-in">
+        <div className="glass rounded-2xl p-5 sm:p-8 md:p-12 mb-12 animate-scale-in">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
             Frontend Developer with 2.5+ years of experience developing web user interfaces. 
             Hands-on experience in developing advanced single page applications using React JS and Next JS. 
@@ -44,7 +44,7 @@ const About = () => {
           {highlights.map((item, index) => (
             <div
               key={index}
-              className="glass rounded-xl p-6 hover:shadow-glow transition-smooth animate-fade-in"
+              className="glass rounded-xl p-5 sm:p-6 hover:shadow-glow transition-smooth animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <item.icon className="w-12 h-12 text-accent mb-4" />
