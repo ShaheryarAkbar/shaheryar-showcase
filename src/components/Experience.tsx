@@ -70,9 +70,6 @@ const Experience = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`flex flex-col ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}>
-                {/* Timeline dot - hidden on mobile, shown on desktop */}
-                <div className="hidden md:block absolute left-1/2 top-7 w-3 h-3 rounded-full bg-accent transform -translate-x-1/2 z-10" />
-                
                 {/* Icon positioned to align with timeline */}
                 <div className={`absolute left-1/2 top-0 transform -translate-x-1/2 md:left-1/2 md:transform md:-translate-x-1/2`}>
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-glow">
