@@ -199,52 +199,57 @@ const Projects = () => {
 
         {/* Project Screenshots Modal */}
         <Dialog open={selectedProject !== null} onOpenChange={(open) => !open && setSelectedProject(null)}>
-          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="max-w-5xl w-[95vw] max-h-[95vh] p-4 sm:p-6 overflow-y-auto">
             {selectedProject !== null && (
               <>
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-gradient">
+                <DialogHeader className="space-y-2 sm:space-y-3">
+                  <DialogTitle className="text-xl sm:text-2xl font-bold text-gradient pr-8">
                     {projects[selectedProject].title}
                   </DialogTitle>
-                  <DialogDescription>
+                  <DialogDescription className="text-sm sm:text-base">
                     {projects[selectedProject].description}
                   </DialogDescription>
                 </DialogHeader>
 
-                <Tabs defaultValue="carousel" className="w-full">
-                  <TabsList className="grid w-full grid-cols-2">
-                    <TabsTrigger value="carousel">Slider View</TabsTrigger>
-                    <TabsTrigger value="grid">Grid View</TabsTrigger>
+                <Tabs defaultValue="carousel" className="w-full mt-4">
+                  <TabsList className="grid w-full grid-cols-2 h-9 sm:h-10">
+                    <TabsTrigger value="carousel" className="text-xs sm:text-sm">Slider View</TabsTrigger>
+                    <TabsTrigger value="grid" className="text-xs sm:text-sm">Grid View</TabsTrigger>
                   </TabsList>
 
-                  <TabsContent value="carousel" className="mt-6">
+                  <TabsContent value="carousel" className="mt-4 sm:mt-6">
                     <Carousel className="w-full">
                       <CarouselContent>
                         {projects[selectedProject].images.map((image, idx) => (
                           <CarouselItem key={idx}>
-                            <div className="relative aspect-video rounded-lg overflow-hidden glass">
+                            <div className="relative w-full rounded-lg overflow-hidden glass">
                               <img
                                 src={image}
                                 alt={`${projects[selectedProject].title} screenshot ${idx + 1}`}
-                                className="w-full h-full object-cover"
+                                className="w-full h-auto object-contain max-h-[60vh] sm:max-h-[70vh]"
+                                loading="lazy"
                               />
+                              <div className="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                                {idx + 1} / {projects[selectedProject].images.length}
+                              </div>
                             </div>
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <CarouselPrevious className="left-2" />
-                      <CarouselNext className="right-2" />
+                      <CarouselPrevious className="left-1 sm:left-2 h-8 w-8 sm:h-10 sm:w-10" />
+                      <CarouselNext className="right-1 sm:right-2 h-8 w-8 sm:h-10 sm:w-10" />
                     </Carousel>
                   </TabsContent>
 
-                  <TabsContent value="grid" className="mt-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <TabsContent value="grid" className="mt-4 sm:mt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-h-[60vh] overflow-y-auto pr-2">
                       {projects[selectedProject].images.map((image, idx) => (
-                        <div key={idx} className="relative aspect-video rounded-lg overflow-hidden glass">
+                        <div key={idx} className="relative w-full rounded-lg overflow-hidden glass">
                           <img
                             src={image}
                             alt={`${projects[selectedProject].title} screenshot ${idx + 1}`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto object-contain"
+                            loading="lazy"
                           />
                         </div>
                       ))}
@@ -252,13 +257,13 @@ const Projects = () => {
                   </TabsContent>
                 </Tabs>
 
-                <div className="mt-4">
-                  <h4 className="font-semibold mb-2">Technologies:</h4>
+                <div className="mt-4 sm:mt-6 pt-4 border-t border-border">
+                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {projects[selectedProject].technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
+                        className="px-2 sm:px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
                       >
                         {tech}
                       </span>
