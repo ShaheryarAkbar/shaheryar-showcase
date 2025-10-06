@@ -27,9 +27,28 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript"],
       features: ["20+ Pages", "Custom Dashboard", "Event Management", "Member Survey"],
       images: [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/ch6LzrP3/dashboard.png",
+        "https://i.ibb.co/XxHxbLDv/profile.png",
+        "https://i.ibb.co/ZptZwQkx/live-hub.png",
+        "https://i.ibb.co/1J2Q0YP1/home.png",
+        "https://i.ibb.co/j9S7LYdH/message.png",
+        "https://i.ibb.co/r2zWJCbs/events.png",
+        "https://i.ibb.co/zTND0RFc/member-survey.png",
+        "https://i.ibb.co/q3pzxq7t/partnership-benefits.png",
+        "https://i.ibb.co/mrdT8hZS/join.png",
+        "https://i.ibb.co/Kj98KLjN/contact.png",
+        "https://i.ibb.co/vxkvrrD1/member-login.png",
+        "https://i.ibb.co/WWhqbQVR/employer-login.png",
+        "https://i.ibb.co/67LbrRm7/employer-registration.png",
+        "https://i.ibb.co/JRZL5C8L/terms.png",
+        "https://i.ibb.co/N2s8x7PY/create-new-thread.png",
+        "https://i.ibb.co/yF3Sdprq/calendar-integration.png",
+        "https://i.ibb.co/4n4pXR4D/notification-setting.png",
+        "https://i.ibb.co/rGcWvX9j/calendar-setting.png",
+        "https://i.ibb.co/4ngbtCzn/category.png",
+        "https://i.ibb.co/PZLcvbBr/not-found.png",
+        "https://i.ibb.co/n8VVcZc7/contact-support.png",
+        "https://i.ibb.co/pjSR7xV5/reset.png"
       ]
     },
     {
@@ -38,8 +57,8 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "Bootstrap"],
       features: ["Responsive Design", "Bootstrap Framework", "Cross-browser Compatible"],
       images: [
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/SQTmrLG/sailor-web.png",
+        "https://i.ibb.co/9w7C5xD/sailor-mobile.png"
       ]
     },
     {
@@ -48,8 +67,7 @@ const Projects = () => {
       technologies: ["NextJS", "Tailwind CSS", "React"],
       features: ["Server-side Rendering", "Modern UI", "Fast Performance"],
       images: [
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/MpvFQty/tutorspro.png"
       ]
     },
     {
@@ -58,8 +76,7 @@ const Projects = () => {
       technologies: ["ReactJS", "SCSS", "JavaScript"],
       features: ["Component Architecture", "Custom Styling", "Responsive Layout"],
       images: [
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/7Nw4QPB/empowercare-home.png"
       ]
     },
     {
@@ -68,8 +85,12 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "Bootstrap"],
       features: ["Admin Dashboard", "Data Visualization", "User Management"],
       images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/gv4Hb2W/toolio-dashboard.png",
+        "https://i.ibb.co/C0GJM3H/toolio-reviews.png",
+        "https://i.ibb.co/SwxCH2y/toolio-message.png",
+        "https://i.ibb.co/t49JTv7/toolio-order.png",
+        "https://i.ibb.co/Gc58Rvp/toolio-setting.png",
+        "https://i.ibb.co/LtvJtcw/toolio-product.png"
       ]
     },
     {
@@ -78,9 +99,28 @@ const Projects = () => {
       technologies: ["ReactJS", "SCSS", "Bootstrap"],
       features: ["E-commerce", "Payment Gateway", "Order Tracking", "Multi-page SPA"],
       images: [
-        "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556742521-9713bf272865?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/2jz875g/blip-login.png",
+        "https://i.ibb.co/XF22BmS/blip-register.png",
+        "https://i.ibb.co/RNCtPJ6/blip-otp.png",
+        "https://i.ibb.co/3MKyVsz/blip-dashboard.png",
+        "https://i.ibb.co/gzHRDNH/blip-category.png",
+        "https://i.ibb.co/6RfGsYK/blip-terms.png",
+        "https://i.ibb.co/NNH16nQ/blip-profile.png",
+        "https://i.ibb.co/Nj0T38t/blip-settings.png",
+        "https://i.ibb.co/svH346z/blip-support.png",
+        "https://i.ibb.co/Zg6hqq8/blip-tracking.png",
+        "https://i.ibb.co/y0GDpHN/blip-ticket.png",
+        "https://i.ibb.co/sHy6J0j/blip-payment.png",
+        "https://i.ibb.co/sVgjCbc/blip-product-selection.png",
+        "https://i.ibb.co/kDJ7vKb/blip-order-placement.png",
+        "https://i.ibb.co/cFG0n5Y/blip-courier.png",
+        "https://i.ibb.co/GWHkpR7/blip-pickup.png",
+        "https://i.ibb.co/YcDQG7c/blip-dropoff.png",
+        "https://i.ibb.co/cX9m8Vb/blip-checkout.png",
+        "https://i.ibb.co/2tFSTMG/blip-order-confirmation.png",
+        "https://i.ibb.co/N6vjBwM/blip-service-confirmation.png",
+        "https://i.ibb.co/QfnnJV9/blip-security.png",
+        "https://i.ibb.co/wzqZzmK/blip-deployment.png"
       ]
     },
     {
@@ -89,8 +129,7 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3", "JavaScript"],
       features: ["Course Management", "Clean UI", "Interactive Elements"],
       images: [
-        "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop"
+        "https://i.ibb.co/6WyxJxn/digital-mojo-courses.png"
       ]
     }
   ];
