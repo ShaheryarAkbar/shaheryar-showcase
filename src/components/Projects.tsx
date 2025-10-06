@@ -219,32 +219,32 @@ const Projects = () => {
 
                   <TabsContent value="carousel" className="mt-4 sm:mt-6">
                     <Carousel className="w-full">
-                      <CarouselContent>
+                      <CarouselContent className="-ml-2 md:-ml-4">
                         {projects[selectedProject].images.map((image, idx) => (
-                          <CarouselItem key={idx}>
-                            <div className="relative w-full rounded-lg overflow-hidden glass">
+                          <CarouselItem key={idx} className="pl-2 md:pl-4">
+                            <div className="relative w-full rounded-lg overflow-hidden glass bg-muted/30">
                               <img
                                 src={image}
                                 alt={`${projects[selectedProject].title} screenshot ${idx + 1}`}
-                                className="w-full h-auto object-contain max-h-[60vh] sm:max-h-[70vh]"
+                                className="w-full h-auto object-contain max-h-[50vh] sm:max-h-[65vh] mx-auto"
                                 loading="lazy"
                               />
-                              <div className="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                              <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
                                 {idx + 1} / {projects[selectedProject].images.length}
                               </div>
                             </div>
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <CarouselPrevious className="left-1 sm:left-2 h-8 w-8 sm:h-10 sm:w-10" />
-                      <CarouselNext className="right-1 sm:right-2 h-8 w-8 sm:h-10 sm:w-10" />
+                      <CarouselPrevious className="left-0 sm:left-2 h-8 w-8 sm:h-10 sm:w-10 -translate-x-0 sm:-translate-x-12" />
+                      <CarouselNext className="right-0 sm:right-2 h-8 w-8 sm:h-10 sm:w-10 translate-x-0 sm:translate-x-12" />
                     </Carousel>
                   </TabsContent>
 
                   <TabsContent value="grid" className="mt-4 sm:mt-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-h-[60vh] overflow-y-auto pr-2">
                       {projects[selectedProject].images.map((image, idx) => (
-                        <div key={idx} className="relative w-full rounded-lg overflow-hidden glass">
+                        <div key={idx} className="relative w-full rounded-lg overflow-hidden glass bg-muted/30">
                           <img
                             src={image}
                             alt={`${projects[selectedProject].title} screenshot ${idx + 1}`}
