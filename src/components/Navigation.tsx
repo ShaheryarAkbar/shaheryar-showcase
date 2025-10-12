@@ -42,7 +42,7 @@ const Navigation = () => {
             e.preventDefault();
             scrollToSection("#home");
           }}
-          className="text-2xl font-bold text-gradient cursor-pointer"
+          className="text-2xl font-bold text-accent cursor-pointer"
         >
           SA
         </a>
@@ -69,10 +69,10 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="md:hidden h-12 w-12"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
       </div>
 

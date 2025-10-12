@@ -20,7 +20,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-0 md:px-6">
+    <section id="about" className="py-12 md:py-20 px-0 md:px-6">
       <div className="mx-auto max-w-6xl px-5 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
           About <span className="text-gradient">Me</span>
