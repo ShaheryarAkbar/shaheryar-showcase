@@ -187,11 +187,11 @@ const Projects = () => {
 
               <Button 
                 onClick={() => setSelectedProject(index)}
-                className="w-full"
+                className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
                 variant="outline"
               >
                 <Eye className="w-4 h-4 mr-2" />
-                View Screenshots
+                View the Screenshots
               </Button>
             </div>
           ))}

@@ -1,12 +1,12 @@
 const Skills = () => {
   const skills = [
-    { name: "ReactJS", level: 95 },
-    { name: "NextJS", level: 90 },
+    { name: "ReactJS", level: 85 },
+    { name: "NextJS", level: 85 },
     { name: "HTML5", level: 98 },
     { name: "CSS3/SCSS", level: 95 },
-    { name: "Tailwind CSS", level: 95 },
+    { name: "Tailwind CSS", level: 80 },
     { name: "Bootstrap", level: 95 },
-    { name: "JavaScript/ES6", level: 90 },
+    { name: "JavaScript/ES6", level: 75 },
     { name: "Styled Components", level: 85 },
     { name: "Material UI", level: 85 },
     { name: "React Bootstrap", level: 90 },
