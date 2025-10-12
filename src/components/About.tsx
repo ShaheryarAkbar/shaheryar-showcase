@@ -29,7 +29,7 @@ const About = () => {
         
         <div className="glass rounded-2xl p-5 sm:p-8 md:p-12 mb-12 animate-scale-in">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-            Frontend Developer with 2.5+ years of experience developing web user interfaces. 
+            Frontend UI Developer with 3.5+ years of experience developing web user interfaces. 
             Hands-on experience in developing advanced single page applications using React JS and Next JS. 
             Skilled in building responsive and accessible frontends that optimize user experience.
           </p>

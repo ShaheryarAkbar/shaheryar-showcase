@@ -5,7 +5,7 @@ const Experience = () => {
     {
       type: "work",
       icon: Briefcase,
-      title: "Frontend Developer",
+      title: "Frontend UI Developer",
       company: "TECHLEADZ",
       period: "May 2022 - Present",
       location: "Lahore, Pakistan",
@@ -62,13 +62,11 @@ const Experience = () => {
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 md:transform md:-translate-x-1/2" />
           
           {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className={`relative mb-16 animate-fade-in ${
-                index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:text-right'
-              }`}
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
+              <div
+                key={index}
+                className={`relative mb-16 animate-fade-in`}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
               <div className={`flex flex-col ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}>
                 {/* Icon positioned to align with timeline */}
                 <div className={`absolute left-1/2 top-0 transform -translate-x-1/2 md:left-1/2 md:transform md:-translate-x-1/2`}>
@@ -78,7 +76,7 @@ const Experience = () => {
                 </div>
                 
                 {/* Content card */}
-                <div className={`ml-0 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth mt-16 md:mt-10 ${
+                <div className={`ml-0 md:ml-0 glass rounded-xl p-6 w-full hover:shadow-glow transition-smooth mt-16 md:mt-10 text-left ${
                   index % 2 === 0 ? 'md:mr-[calc(50%+4rem)] md:w-[calc(50%-4rem)]' : 'md:ml-[calc(50%+4rem)] md:w-[calc(50%-4rem)]'
                 }`}>
                   <div className="flex items-center gap-2 mb-2">
