@@ -1,4 +1,4 @@
-import { ExternalLink, Code, Eye } from "lucide-react";
+import { Code, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -128,15 +128,14 @@ const Projects = () => {
         <div className="w-20 h-1 gradient-primary mx-auto mb-12 rounded-full" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <div
-              key={index}
-              className="glass rounded-xl p-5 sm:p-6 hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in group"
+              key={project.title}
+              className="glass rounded-xl p-5 sm:p-6 hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in group flex h-full flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-start justify-between mb-4">
+              <div className="mb-4">
                 <Code className="w-10 h-10 text-accent" />
-                <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-smooth" />
               </div>
               
               <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-smooth">
@@ -147,19 +146,7 @@ const Projects = () => {
                 {project.description}
               </p>
               
-              <div className="mb-4">
-                <h4 className="text-sm font-semibold text-accent mb-2">Key Features:</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  {project.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 mt-auto">
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
@@ -170,16 +157,69 @@ const Projects = () => {
                 ))}
               </div>
 
-              <Button 
-                onClick={() => setSelectedProject(index)}
-                className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
-                variant="outline"
-              >
-                <Eye className="w-4 h-4 mr-2" />
-                View the Screenshots
-              </Button>
+              {project.images.length > 0 && (
+                <Button 
+                  onClick={() => setSelectedProject(index)}
+                  className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
+                  variant="outline"
+                >
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Screenshots
+                </Button>
+              )}
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 md:mt-20">
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-3">
+            Additional <span className="text-gradient">Work</span>
+          </h3>
+          <p className="text-center text-muted-foreground mb-10">
+            More responsive interface projects and screen collections
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalProjects.map((project, index) => (
+              <div
+                key={project.title}
+                className="glass rounded-xl p-5 sm:p-6 hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in group flex h-full flex-col"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="mb-4">
+                  <Code className="w-10 h-10 text-accent" />
+                </div>
+
+                <h4 className="text-xl font-bold mb-3 group-hover:text-gradient transition-smooth">
+                  {project.title}
+                </h4>
+
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4 mt-auto">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <Button
+                  onClick={() => setSelectedProject(featuredProjects.length + index)}
+                  className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
+                  variant="outline"
+                >
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Screenshots
+                </Button>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Project Screenshots Modal */}
@@ -214,7 +254,7 @@ const Projects = () => {
                                 className="w-full h-auto object-contain max-h-[50vh] sm:max-h-[65vh] mx-auto"
                                 loading="lazy"
                               />
-                              <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
+                              <div className="absolute bottom-2 right-2 bg-background/80 text-foreground text-xs px-2 py-1 rounded backdrop-blur-sm">
                                 {idx + 1} / {projects[selectedProject].images.length}
                               </div>
                             </div>
