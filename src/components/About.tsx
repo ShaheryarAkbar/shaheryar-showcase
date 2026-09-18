@@ -1,21 +1,21 @@
-import { Code2, Laptop, Users } from "lucide-react";
+import { Code2, Laptop, PanelsTopLeft } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "Clean Code",
-      description: "Writing maintainable, semantic HTML5, CSS, and React components"
+      title: "Reusable Components",
+      description: "Building reusable React.js and Next.js interface components"
     },
     {
       icon: Laptop,
       title: "Responsive Design",
-      description: "Mobile-first approach ensuring perfect display on all devices"
+      description: "Creating interfaces that adapt across mobile, tablet, and desktop"
     },
     {
-      icon: Users,
-      title: "Team Player",
-      description: "Experience in Agile methodology and cross-functional collaboration"
+      icon: PanelsTopLeft,
+      title: "Design to Code",
+      description: "Converting Figma, PSD, WordPress, and image designs into interfaces"
     }
   ];
 
@@ -29,14 +29,12 @@ const About = () => {
         
         <div className="glass rounded-2xl p-5 sm:p-8 md:p-12 mb-12 animate-scale-in">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-            Frontend UI Developer with 3.5+ years of experience developing web user interfaces. 
-            Hands-on experience in developing advanced single page applications using React JS and Next JS. 
-            Skilled in building responsive and accessible frontends that optimize user experience.
+            Frontend / UI Developer with 4+ years of experience building responsive web interfaces
+            with React.js and Next.js.
           </p>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Specialized in converting designs from Figma, PSD, and images into pixel-perfect, 
-            production-ready code using modern frameworks and best practices. Passionate about 
-            creating seamless user experiences with clean, maintainable code.
+            Focused on converting Figma, PSD, WordPress, and image designs into responsive interfaces
+            using Tailwind CSS, Bootstrap, SASS/SCSS, and reusable components.
           </p>
         </div>
 

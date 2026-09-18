@@ -5,16 +5,16 @@ const Experience = () => {
     {
       type: "work",
       icon: Briefcase,
-      title: "Frontend UI Developer",
+      title: "Frontend Developer",
       company: "TECHLEADZ",
-      period: "May 2022 - Present",
+      period: "May 2022 - July 2026",
       location: "Lahore, Pakistan",
-      description: "Developing multiple systems, managing teams, working with version control (GitHub), implementing Tailwind CSS and SASS/SCSS, collaborating with backend developers, redesigning applications, and converting designs to code.",
+      description: "Built responsive React.js and Next.js interfaces and reusable components from Figma, PSD, WordPress, and image designs. Used Tailwind CSS, Bootstrap, and SASS/SCSS while collaborating with backend developers through GitHub and Agile workflows.",
       achievements: [
-        "Team Management Experience",
-        "Multiple project handling simultaneously",
-        "Figma/PSD to React/Next.js conversion",
-        "Agile Methodology implementation"
+        "Responsive React.js and Next.js UI",
+        "Reusable interface components",
+        "Figma, PSD, WordPress, and image design to code",
+        "GitHub and Agile collaboration"
       ]
     },
     {
