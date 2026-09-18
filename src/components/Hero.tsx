@@ -13,13 +13,13 @@ const Hero = () => {
           <span className="text-gradient">Shaheryar Akbar</span>
         </h1>
         <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-4">
-          Frontend UI Developer
+          Frontend / UI Developer
         </p>
         <p className="text-xl md:text-2xl text-accent mb-8">
-          ReactJS | NextJS | Tailwind CSS | UI Developer
+          React.js | Next.js | Responsive UI Development
         </p>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-          3.5+ years crafting pixel-perfect, responsive web experiences with modern technologies
+          4+ years converting Figma and PSD designs into responsive web interfaces
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button

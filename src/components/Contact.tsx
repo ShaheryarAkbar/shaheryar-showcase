@@ -18,7 +18,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Nishat Colony, Lahore, Pakistan",
+      value: "Lahore, Pakistan",
       href: "#"
     },
     {
