@@ -209,14 +209,16 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <Button
-                  onClick={() => setSelectedProject(featuredProjects.length + index)}
-                  className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
-                  variant="outline"
-                >
-                  <Eye className="w-4 h-4 mr-2" />
-                  View Screenshots
-                </Button>
+                {project.images.length > 0 && (
+                  <Button
+                    onClick={() => setSelectedProject(featuredProjects.length + index)}
+                    className="w-full hover:bg-primary/10 hover:text-primary hover:border-primary/20"
+                    variant="outline"
+                  >
+                    <Eye className="w-4 h-4 mr-2" />
+                    View Screenshots
+                  </Button>
+                )}
               </div>
             ))}
           </div>

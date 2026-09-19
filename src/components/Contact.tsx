@@ -18,8 +18,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Lahore, Pakistan",
-      href: "#"
+      value: "Lahore, Pakistan"
     },
     {
       icon: Linkedin,
@@ -42,15 +41,9 @@ const Contact = () => {
         
         <div className="glass rounded-2xl p-4 sm:p-6 md:p-12 mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-            {contactInfo.map((info, index) => (
-              <a
-                key={index}
-                href={info.href}
-                target={info.label === "LinkedIn" ? "_blank" : undefined}
-                rel={info.label === "LinkedIn" ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted/50 transition-smooth group animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {contactInfo.map((info, index) => {
+              const content = (
+                <>
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-smooth flex-shrink-0">
                   <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
@@ -60,8 +53,29 @@ const Contact = () => {
                     {info.value}
                   </div>
                 </div>
-              </a>
-            ))}
+                </>
+              );
+
+              const itemClassName = "flex items-center gap-3 p-3 rounded-xl transition-smooth group animate-fade-in";
+              const itemStyle = { animationDelay: `${index * 0.1}s` };
+
+              return info.href ? (
+                <a
+                  key={info.label}
+                  href={info.href}
+                  target={info.label === "LinkedIn" ? "_blank" : undefined}
+                  rel={info.label === "LinkedIn" ? "noopener noreferrer" : undefined}
+                  className={`${itemClassName} hover:bg-muted/50`}
+                  style={itemStyle}
+                >
+                  {content}
+                </a>
+              ) : (
+                <div key={info.label} className={itemClassName} style={itemStyle}>
+                  {content}
+                </div>
+              );
+            })}
           </div>
           
           <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border text-center">

@@ -1,17 +1,26 @@
 const Skills = () => {
-  const skills = [
-    { name: "ReactJS", level: 85 },
-    { name: "NextJS", level: 85 },
-    { name: "HTML5", level: 98 },
-    { name: "CSS3/SCSS", level: 95 },
-    { name: "Tailwind CSS", level: 80 },
-    { name: "Bootstrap", level: 95 },
-    { name: "JavaScript/ES6", level: 75 },
-    { name: "Styled Components", level: 85 },
-    { name: "Material UI", level: 85 },
-    { name: "React Bootstrap", level: 90 },
-    { name: "PrimeReact", level: 80 },
-    { name: "Responsive Design", level: 98 }
+  const skillGroups = [
+    {
+      title: "Frontend Foundations",
+      skills: ["HTML5", "CSS3", "SCSS", "JavaScript", "ES6"]
+    },
+    {
+      title: "Frameworks",
+      skills: ["React.js", "Next.js"]
+    },
+    {
+      title: "UI & Styling",
+      skills: [
+        "Tailwind CSS",
+        "Bootstrap",
+        "React Bootstrap",
+        "Material UI",
+        "PrimeReact",
+        "PrimeFlex",
+        "Styled Components",
+        "Responsive Design"
+      ]
+    }
   ];
 
   return (
@@ -22,22 +31,23 @@ const Skills = () => {
         </h2>
         <div className="w-20 h-1 gradient-primary mx-auto mb-12 rounded-full" />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {skillGroups.map((group, index) => (
             <div
-              key={index}
+              key={group.title}
               className="glass rounded-xl p-5 sm:p-6 hover:shadow-card transition-smooth animate-fade-in"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <div className="flex justify-between items-center mb-3">
-                <span className="text-lg font-semibold">{skill.name}</span>
-                <span className="text-accent font-bold">{skill.level}%</span>
-              </div>
-              <div className="w-full bg-primary/10 border border-primary/20 rounded-full h-3 overflow-hidden">
-                <div
-                  className="gradient-primary h-full rounded-full transition-all duration-1000 ease-out shadow-glow"
-                  style={{ width: `${skill.level}%` }}
-                />
+              <h3 className="text-xl font-bold text-accent mb-4">{group.title}</h3>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-2 text-sm font-medium bg-primary/10 text-foreground rounded-full border border-primary/20"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
