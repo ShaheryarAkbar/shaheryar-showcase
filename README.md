@@ -199,7 +199,7 @@ Styled-components
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://shaheryar-showcase.lovable.app
+**Live app**: https://shaheryar.altrixcore.com
 
 ## Build with Lovable
 

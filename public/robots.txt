@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://shaheryar.altrixcore.com/sitemap.xml
